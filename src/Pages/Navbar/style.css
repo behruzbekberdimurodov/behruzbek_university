@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: fixed;
+  top: 0;
+  z-index: 777777222222222200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.navbar .box1 {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  background-image: url(../assets/university-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar .box2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar .box2 .text_first {
+  cursor: pointer;
+  font-family: monospace;
+  color: orange;
+  padding: 0px 4px;
+  transition: all 0.3s;
+}
+.navbar .box2 .text_first:hover {
+  box-shadow: 0 2px 0 0 orange;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  display: none;
+  color: white;
+  font-size: 60px;
+  background-image: url(https://img.icons8.com/fluency/48/menu--v3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 845px) {
+  .box2 {
+    display: none !important;
+  }
+  .burger {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=style.css.map */
