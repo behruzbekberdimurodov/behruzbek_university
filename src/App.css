@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black !important;
+}
+body {
+  cursor: url("https://img.icons8.com/3d-fluency/30/cursor.png"), auto;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+.cl-internal-8bykxp{
+  margin-top: 15px;
+}
+.cl-internal-1c61r6f{
+  height: 40rem;
+  margin-top: 50px;
+}
+body {
+  background-color: #050815;
+  color: white;
+  /* background: blue; */
+}
+.container {
+  max-width: 1500px;
+  padding: 0px 10px;
+  margin: auto;
+  user-select: none;
+
+  margin-top: 70px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
