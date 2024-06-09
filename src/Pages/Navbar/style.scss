@@ -12,39 +12,45 @@ a {
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: center;
   user-select: none;
   position: fixed;
   top: 0;
   z-index: 777777222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222227;
 
   backdrop-filter: blur(10px);
-
-  .box1 {
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    background-image: url(../assets/university-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .box2 {
+  .nabar-in {
+    user-select: none;
     display: flex;
+    width: 1480px;
+
+
     align-items: center;
-    gap: 30px;
-    
-    .text_first {
+    justify-content: space-around;
+    .box1 {
       cursor: pointer;
+      width: 70px;
+      height: 70px;
+      background-image: url(../images/university-logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box2 {
+      display: flex;
+      align-items: center;
+      gap: 30px;
 
-      font-family: monospace;
-      color: orange;
-      padding: 0px 4px;
-      transition: all 0.3s;
-      &:hover {
+      .text_first {
+        cursor: pointer;
 
-        box-shadow: 0 2px 0 0 orange;
+        font-family: monospace;
+        color: orange;
+        padding: 0px 4px;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 0 2px 0 0 orange;
+        }
       }
     }
   }
@@ -69,9 +75,47 @@ a {
   .burger {
     display: flex;
   }
-  .navbar {
+  .nabar-in {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+}
+  .menu_navbar{
+    width: 300px;
+    height: 600px;
+    background-color: aliceblue;
+    top: 0px;
+    z-index: 77777777777777777777777777777777777777777777777777777777777777777777777777777777777;
+    left: 5px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .menu-first{
+      width: 100%;
+
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .close_btn{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+    .text_first {
+      cursor: pointer;
+
+      font-family: monospace;
+      color: orange;
+      padding: 0px 4px;
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: 0 2px 0 0 orange;
+      }
   }
 }

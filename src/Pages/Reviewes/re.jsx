@@ -26,8 +26,7 @@ function re() {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <video src='https://youtu.be/l8KdfxxffIo?si=I4DbBz55-YZRs37I'></video>
-
+                        <video className='video_1' autoPlay loop muted src="https://www.youtube.com/live/TlsACOwz-i8?si=mt2GDBL3gBUIxn77"></video>
                         </SwiperSlide>
                         <SwiperSlide>Slide 2</SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>

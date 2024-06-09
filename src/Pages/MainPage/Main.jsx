@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./main.css";
 import vidio_1 from "../Vidios/ddd.mp4";
-import Un_shablon from "../assets/behruz_u.png";
-import students from "../assets/univeristy-students.webp";
+import Un_shablon from "../images/behruz_u.png";
+import students from "../images/univeristy-students.webp";
 import laptop from "../Vidios/5-transcode (1).mp4";
 import phone from "../Vidios/6-transcode (1).mp4";
 import qoravoy from "../Vidios/1-transcode.mp4";
@@ -276,9 +276,17 @@ function Main() {
             <h3 className="text_13">
               Youtube channel Admin : Behruzbek Berdimurodov ✔️
             </h3>
-            <button className="button-85" role="button">
+            <button className="buttons-s">
               Watch students
+              <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                />
+              </svg>
             </button>
+
           </div>
         </div>
       </div>
