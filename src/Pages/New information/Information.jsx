@@ -1,78 +1,36 @@
 import React from "react";
 import "./Information.css";
+import {useState} from 'react'
 import laptop from "../Vidios/5-transcode (1).mp4";
 import phone from "../Vidios/6-transcode (1).mp4";
 import qoravoy from "../Vidios/1-transcode.mp4";
-import man_img from '../assets/aaada.png'
+import man_img from '../images/aaada.png'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-import { EffectCoverflow, Pagination } from 'swiper/modules';
 function Information() {
+  const [prices, setPrices] = useState({
+    basic: "$199.99",
+    professional: "$249.99",
+    master: "$399.99",
+  });
+
+  const handleToggle = () => {
+    setPrices((prevPrices) => ({
+      basic: prevPrices.basic === "$199.99" ? "$19.99" : "$199.99",
+      professional: prevPrices.professional === "$249.99" ? "$24.99" : "$249.99",
+      master: prevPrices.master === "$399.99" ? "$39.99" : "$399.99",
+    }));
+  };
   return (
     <div className="Information">
-      <div className="Information_site">
-        <h1>News & About the site</h1>
-        <span>Behruzbek Berdimurodov introduced the news on our site and made very nice changes. This site is also working for the exam!</span>
-        <div className="news_div">
-          <Swiper
-            effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={'auto'}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={true}
-            modules={[EffectCoverflow, Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-            </SwiperSlide>
-          </Swiper>
-        </div>
 
-      </div>
       <div className="new_man">
         <div className="customers">
           <h1 className="customer-title">
             How we work features for <br />
             customers
           </h1>
-          <p>
+          <p className="customer-text">
             Whether you need help launching a single product in a <br />
             specific country or are looking for a global
           </p>
@@ -128,6 +86,73 @@ function Information() {
         <div className="grp02">
           <img className="man_img" src={man_img} alt="" />
         </div>
+      </div>
+      <div className="purchase">
+        <>
+          <header>
+            <h1>Our Pricing</h1>
+            <div className="toggle">
+              <label>Annually </label>
+              <div className="toggle-btn">
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  id="checkbox"
+                  onChange={handleToggle}
+                />
+                <label className="sub" htmlFor="checkbox">
+                  <div className="circle" />
+                </label>
+              </div>
+              <label> Monthly</label>
+            </div>
+          </header>
+          <div className="cards">
+            <div className="card shadow">
+              <ul>
+                <li className="pack">Basic</li>
+                <li className="price bottom-bar">
+                  {prices.basic}
+                </li>
+                <li className="bottom-bar">500 GB Storage</li>
+                <li className="bottom-bar">2 Users Allowed</li>
+                <li className="bottom-bar">Send up to 3 GB</li>
+                <li>
+                  <button className="btn">Learn More</button>
+                </li>
+              </ul>
+            </div>
+            <div className="card active">
+              <ul>
+                <li className="pack">Professional</li>
+                <li className="price bottom-bar">
+                  {prices.professional}
+                </li>
+                <li className="bottom-bar">1 TB Storage</li>
+                <li className="bottom-bar">5 Users Allowed</li>
+                <li className="bottom-bar">Send up to 10 GB</li>
+                <li>
+                  <button className="btn active-btn">Learn More</button>
+                </li>
+              </ul>
+            </div>
+            <div className="card shadow">
+              <ul>
+                <li className="pack">Master</li>
+                <li className="price bottom-bar">
+                  {prices.master}
+                </li>
+                <li className="bottom-bar">2 TB Storage</li>
+                <li className="bottom-bar">10 Users Allowed</li>
+                <li className="bottom-bar">Send up to 20 GB</li>
+                <li>
+                  <button className="btn">Learn More</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </>
+
       </div>
 
       <div className="laptop_page">

@@ -54,20 +54,20 @@ function hamkor() {
     setSocial("@suxrob_minecraft");
   }
   function Aziz() {
-    setName("Aziz Ako");
+    setName("Azizbek Qayumov");
     setImg("https://i.ibb.co/3zpP9Rg/aziz-ako.jpg");
     setInfo(
       "Hello, how are you? My name is  Aziz Ako. My last name is . My dream is to become a great programmer like Alisher Tajiyev. I currently live in the book district."
     );
-    setSocial("@Aziz_ako");
+    setSocial("@Aziz_qayumov");
   }
   function Saydalixon() {
-    setName("Saydalixon xizmati");
+    setName("Saydalixon");
     setImg("https://i.ibb.co/Hd0FtWS/photo-2024-04-28-14-36-05.jpg");
     setInfo(
       "Hello, how are you? My name is  Saydalixon. My last name is . My dream is to become a great programmer like Alisher Tajiyev. I currently live in the book district."
     );
-    setSocial("@Saydalixon_xizmati");
+    setSocial("@sydlwor_iq");
   }
   function Nabi() {
     setName("Nabi Jalol");

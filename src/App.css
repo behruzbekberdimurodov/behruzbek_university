@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
-.dark-mode {
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* .dark-mode {
   background-color: white;
   color: black !important;
-}
+} */
 body {
   cursor: url("https://img.icons8.com/3d-fluency/30/cursor.png"), auto;
 }
@@ -24,6 +29,7 @@ html {
 }
 body {
   background-color: #050815;
+  transition: all 0.5s;
   color: white;
   /* background: blue; */
 }
@@ -32,6 +38,7 @@ body {
   padding: 0px 10px;
   margin: auto;
   user-select: none;
+  overflow-x: hidden;
 
   margin-top: 70px;
 }

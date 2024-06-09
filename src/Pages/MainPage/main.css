@@ -10,7 +10,7 @@
   width: 100%;
   text-align: center;
   min-height: 800px;
-  background-image: url(../assets/hero-bg.png);
+  background-image: url(../images/hero-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@
   background-color: #050815;
   color: white;
   text-align: center;
-  background-image: url(../assets/section-no-time-bg.png);
+  background-image: url(../images/section-no-time-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,7 +146,7 @@
 .MainPage .box2 .logo {
   width: 100px;
   height: 100px;
-  background-image: url(../assets/university-logo.png);
+  background-image: url(../images/university-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -280,12 +280,68 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../assets/yer.jpg);
+  background-image: url(../images/yer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
+}
+.MainPage .box3 .buttons-s {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 1rem;
+  padding-inline: 1.55rem;
+  background-color: black;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid rgba(255, 255, 255, 0.3019607843);
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+.MainPage .box3 .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.MainPage .box3 .button:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.MainPage .box3 .button:hover .icon {
+  transform: translate(4px);
+}
+.MainPage .box3 .button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+.MainPage .box3 .button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
 }
 .MainPage .box3 .map_t_first {
   padding-top: 20px;
@@ -612,6 +668,63 @@
     flex-direction: column;
   }
 }
+@media (max-width: 625px) {
+  .vidio {
+    width: 400px !important;
+    height: auto !important;
+  }
+  .phone_vidio {
+    width: 400px !important;
+    height: auto !important;
+  }
+  .qora_vidio {
+    width: 400px !important;
+    height: auto !important;
+  }
+  .phone_info {
+    width: auto !important;
+  }
+  .qora_info {
+    width: auto !important;
+  }
+  .vidio_info {
+    width: auto !important;
+  }
+  .MainPage .box1 .Vidio_1 {
+    max-width: 500px !important;
+  }
+  .MainPage .box1 {
+    margin-bottom: 20px !important;
+  }
+  .MainPage .box3 .box3-in .xarita {
+    width: 500px;
+  }
+  .MainPage .box3 .box3-in .map_info {
+    width: 100%;
+  }
+}
 .MainPage .box1 span {
   color: white !important;
+}
+
+@media (max-width: 540px) {
+  .MainPage .box3 .box3-in .xarita {
+    width: 380px;
+    height: 300px;
+  }
+  .MainPage .box1 .Vidio_1 {
+    width: 400px;
+  }
+  .MainPage .slider .swiper {
+    height: 400px;
+  }
+  .MainPage .slider {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 433px) {
+  .MainPage .box1 .Vidio_1 {
+    width: 360px;
+  }
 }/*# sourceMappingURL=main.css.map */

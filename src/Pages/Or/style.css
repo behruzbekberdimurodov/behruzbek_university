@@ -9,7 +9,7 @@
   left: 10px;
   cursor: pointer;
 
-  background-image: url("../assets/more-grid-big-svgrepo-com.svg");
+  background-image: url("../images/more-grid-big-svgrepo-com.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,3 +227,7 @@ a {
 .icon-button:focus {
   background-color: #dfdad7;
 }
+
+
+
+/* 0 */
