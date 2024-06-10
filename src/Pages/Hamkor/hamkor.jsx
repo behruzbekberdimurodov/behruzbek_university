@@ -94,9 +94,7 @@ function hamkor() {
         slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
+
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
