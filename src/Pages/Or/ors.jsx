@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './style.css'
 import DarkModeToggle from '../LightModeToggle';
+import ScrollButton from '../Scroll button/ScrollButton';
 function ors() {
 
     function myFunction() {
@@ -67,12 +68,12 @@ function ors() {
         <>
             <div className="functions" onClick={menu_fuf}></div>
             <div className="functions_mode">
-                <button onClick={toggleFullScreen}>
+                <button className='button' onClick={toggleFullScreen}>
                     {isFullScreen ? "Cancel" : "Full screen"}
                 </button>
 
                 <DarkModeToggle/>
-                <button onClick={close_menu}>Close</button>
+                <button className='button' onClick={close_menu}>Close</button>
             </div>
             {
                 modal && <div className="modal">
@@ -229,6 +230,8 @@ function ors() {
                     </article>
                 </div>
             }
+
+            <ScrollButton />
         </>
     )
 }

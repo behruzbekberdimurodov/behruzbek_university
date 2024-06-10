@@ -26,7 +26,7 @@ const LightModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleLightMode}>
+    <button className='button' onClick={toggleLightMode}>
       {lightMode ? 'Dark Mode' : 'Light Mode'}
     </button>
   );

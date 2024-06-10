@@ -11,8 +11,8 @@ import Found_404 from "./Pages/404 found/Found_404";
 
 import { SignedIn, SignedOut, UserButton, RedirectToSignIn } from "@clerk/clerk-react";
 import Contact from "./Pages/Contact/Contact";
-import Reviewes from './Pages/Reviewes/re'
-import Loaderr from './Pages/Loader/Loader'
+import Reviewes from './Pages/Reviewes/New'
+import Loaderr from './Pages/Loader/Loader' 
 import Profisseonal from './Pages/Profisseonal/live'
 import Scroll from "./Scroll ToP/Scroll";
 
