@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    .box1 {
+    .boxss1 {
       width: 420px;
       border-radius: 10px;
       height: 400px;
@@ -35,18 +35,38 @@
       border: 1px solid white;
 
       flex-direction: column;
-      button {
-        width: 200px;
-        height: 50px;
-        background-color: black;
-        cursor: pointer;
-        color: white;
-      }
+
       h1 {
         font-size: 40px;
       }
       .texts_1 {
         max-width: 400px;
+      }
+      .btnss {
+        transition: all 0.3s ease-in-out;
+        font-family: "Dosis", sans-serif;
+      }
+
+      .btnss {
+        width: 150px;
+        height: 60px;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, #47403d 0%, #000000 100%);
+        /* box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5); */
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        color: white;
+      }
+
+      .btnss:hover {
+        transform: translateY(3px);
+        box-shadow: none;
+      }
+
+      .btnss:active {
+        opacity: 0.5;
       }
     }
     .vs {
@@ -66,7 +86,7 @@
       height: 400px;
       /* background-color: red; */
       text-align: center;
-      display: flex;
+      display: flex !important;
       align-items: center;
       justify-content: space-evenly;
 
@@ -77,62 +97,31 @@
       h3 {
         max-width: 400px;
       }
-      .button {
-        height: 50px;
+      .btnss {
+        transition: all 0.3s ease-in-out;
+        font-family: "Dosis", sans-serif;
+      }
+
+      .btnss {
         width: 150px;
-        border: none;
-        border-radius: 10px;
+        height: 60px;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, orange 0%, gold 100%);
+        /* box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5); */
+        outline: none;
         cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
+        border: none;
+        font-size: 24px;
+        color: white;
       }
 
-      .button:hover {
-        box-shadow: 0.5px 0.5px 150px #252525;
+      .btnss:hover {
+        transform: translateY(3px);
+        box-shadow: none;
       }
 
-      .type1::after {
-        content: "Get started";
-        height: 50px;
-        width: 150px;
-        background-color: yellow;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        transform: translateY(50px);
-        font-size: 1.2rem;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease-in-out;
-      }
-
-      .type1::before {
-        content: "Access Blueprint";
-        height: 50px;
-        width: 150px;
-        background-color: #cfb067;
-
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        transform: translateY(0px) scale(1.2);
-        font-size: 14px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease-in-out;
-      }
-
-      .type1:hover::after {
-        transform: translateY(0) scale(1.2);
-      }
-
-      .type1:hover::before {
-        transform: translateY(-50px) scale(0) rotate(120deg);
+      .btnss:active {
+        opacity: 0.5;
       }
     }
   }
@@ -548,52 +537,93 @@
     left: 100%;
   }
 }
-.text_end{
-  
+.text_end {
   padding-top: 20px;
   font-weight: 900;
   text-align: center;
-  
 }
-.textss_1{
+.textss_1 {
   font-weight: 100;
-  padding: 20px 0px ;
+  padding: 20px 0px;
   font-size: 38px;
 }
-.textss_2{
+.textss_2 {
   font-weight: 100;
   padding-bottom: 20px;
 }
 
-
-@media (max-width:1000px ) {
-  .box_1{
+@media (max-width: 1000px) {
+  .box_1 {
     flex-direction: column;
     height: auto !important;
   }
-  .box_2{
+  .box_2 {
     flex-direction: column;
     height: auto !important;
   }
-  .box_3{
+  .box_3 {
     flex-direction: column;
     height: auto !important;
   }
-  .path_1{
+  .path_1 {
     max-width: 500px !important;
     height: auto !important;
     padding-top: 20px;
   }
-  .patx_2{
-    max-width: 500px !important;
-    height: auto !important;
+  .patx_2 {
+    display: none;
     /* padding-top: 20px; */
   }
 }
 
-
-
-.chena{
+.chena {
   font-size: 42px;
   color: #dcbe78;
+}
+@media (max-width: 880px) {
+  .boxs {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .text_2 svg {
+    display: none !important;
+  }
+  .path_2 {
+    width: auto !important;
+  }
+  .patx_1 {
+    width: auto !important;
+  }
+  .patx_2 {
+    display: none;
+  }
+  .patx_1 h1 {
+    font-size: 26px;
+  }
+  .patx_1 h2 {
+    font-size: 18px;
+  }
+  .path_1 {
+    width: 400px !important;
+  }
+  .texts_2 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 454px) {
+  .boxss1 {
+    width: auto !important;
+  }
+  .box2 {
+    width: auto !important;
+  }
+  .card_curs {
+    width: auto !important;
+    padding: 20px;
+  }
+  .path_1 {
+    margin-bottom: 20px !important;
+  }
 }

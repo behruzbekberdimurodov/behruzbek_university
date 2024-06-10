@@ -23,7 +23,7 @@ function Contact() {
     });
 
     const generateCaptcha = () => {
-        const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const chars = "u3frFEyWEF4fEFny48EFW3u4cWEr34DGnyvRTH3i4mYM9r3DXV4m4SDu3RTH8T9HtuDVvF8EFYT4JnUILtIOLvO3MY4mPO8PPvtM]34mVcDFnDtDSm3EvFE4Fmctvn39m548";
         let captcha = "";
         for (let i = 0; i < 6; i++) {
             captcha += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -91,8 +91,9 @@ function Contact() {
         let messageText = `Ism Familiya: ${ name }\nEmail: ${ email }\nTelefon: ${ phone }\nXabar: ${ message }`    ;
         let token = '7209727155:AAGS-7BaO54xB_FUaZrJcdc6ph7Q0aVX6Aw';
         let chatId = '6611665943';
-        let url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chatId + '&text=' + encodeURIComponent(messageText);
 
+
+        let url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chatId + '&text=' + encodeURIComponent(messageText);
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.send();
@@ -111,10 +112,9 @@ function Contact() {
         <div className="contacts">
             <div className="contact-in-all">
                 <form onSubmit={handleSubmit} className="contact-one">
-                    <h1>Biz bilan bog'laning</h1>
+                    <h1>Contact US</h1>
                     <h2>
-                        Agar sizda biron bir savol bo'lsa, qo'ng'iroq qiling yoki shaklni
-                        to'ldiring. Biz sizga qisqa vaqt ichida javob beramiz.
+                    If you have any questions, call or fill out the form. We will reply you shortly.
                     </h2>
 
                     <input
@@ -125,25 +125,25 @@ function Contact() {
                         className="style_input"
                         placeholder="F.I.O*"
                     />
-                    {name_error && <p>Ism va familiya kamida 6 harfdan iborat!</p>}
+                    {name_error && <p>Name and Surname minimum 6 length !</p>}
 
                     <input
                         id="email"
                         onChange={email_check}
                         type="email"
                         className="style_input"
-                        placeholder="Emailingizni manzilingiz*"
+                        placeholder="Input Email*"
                     />
-                    {email_error && <p>Elektron pochtada xatolik!</p>}
+                    {email_error && <p>Writed Email Error!</p>}
                     <input
                         required
                         id="phone"
                         onChange={phone_check}
                         type="text"
                         className="style_input"
-                        placeholder="Telefon raqamingiz*"
+                        placeholder="Phone Number*"
                     />
-                    {phone_error && <p>Telefon raqamida xato!</p>}
+                    {phone_error && <p>Phone Number error!</p>}
 
 
                     <input
@@ -152,9 +152,9 @@ function Contact() {
                         onChange={message_check}
                         type="text"
                         className="style_input style_input_two"
-                        placeholder="Xabaringiz*"
+                        placeholder="Messeage*"
                     />
-                    {message_error && <p>Xabar kamida 10 ta harfdan iborat!</p>}
+                    {message_error && <p>Messeage minimim value length 10 !</p>}
 
                     <div className="form-group captcha-container">
                         <div className="captcha-box">

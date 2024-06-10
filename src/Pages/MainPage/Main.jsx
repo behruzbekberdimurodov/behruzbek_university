@@ -26,10 +26,38 @@ function Main() {
     dataFetch();
   }, [link]);
 
+  // const [MainYozuv, setMainYozuv] = useState([]);
+  // const [link_yozuv, setLink_yozuv] = useState("http://localhost:3000/Main_Yozuv");
+
+  // useEffect(() => {
+  //   const dataFetch = async () => {
+  //     try {
+  //       const req = await fetch(link_yozuv);
+  //       const data = await req.json();
+  //       setMainYozuv(data);
+  //     } catch (error) {
+  //       console.error(`Siz Olmoqchi bo'lgan ma'lumotda Xatolik bor`, error);
+  //     }
+  //   };
+  //   dataFetch();
+  // }, [link]);
+
   //HTML
   return (
+
     <div className="MainPage">
       <div className="box1">
+        {/* {MainYozuv.map((yozuvbek) => (
+          <Fragment key={yozuvbek}>
+            <h1 className="text_1">{yozuvbek.yozuvbek1}</h1>
+            <h1 className="text_2">{yozuvbek.yozuvbek2}</h1>
+            <h1 className="text_3">{yozuvbek.yozuvbek3}</h1>
+            <h3 className="text_4">{yozuvbek.yozuvbek4}</h3>
+          </Fragment>
+        ))} */}
+
+
+
         <h1 className="text_1">UNIVERSITY.COM</h1>
         <h1 className="text_2">IN A WORLD RACING FORWARD,</h1>
         <h1 className="text_3">CAN YOU AFFORD TO STAND STILL?</h1>

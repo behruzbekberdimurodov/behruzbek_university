@@ -58,22 +58,22 @@ function Navbar() {
             </div>
             <Link to="">
               {" "}
-              <h3 className="text_first txt_1">HOME </h3>
+              <h3 onClick={close_off} className="text_first txt_1">HOME </h3>
             </Link>
             <Link to="/NewInformation">
               {" "}
-              <h3 className="text_first txt_2">NEW INFORMATION</h3>
+              <h3 onClick={close_off} className="text_first txt_2">NEW INFORMATION</h3>
             </Link>
             <Link to="Reviewes">
-              <h3 className=" text_first txt_3">REVIEWES</h3>
+              <h3 onClick={close_off} className=" text_first txt_3">REVIEWES</h3>
 
             </Link>
             <Link to="THE-ALTERNATIVE">
 
-              <h3 className="text_first txt_4">THE-ALTERNATIVE</h3>
+              <h3 onClick={close_off} className="text_first txt_4">THE-ALTERNATIVE</h3>
             </Link>
             <Link to="Contact">
-              <h3 className="text_first txt_5">CONTACT</h3>
+              <h3 onClick={close_off} className="text_first txt_5">CONTACT</h3>
             </Link>
           </div>
 

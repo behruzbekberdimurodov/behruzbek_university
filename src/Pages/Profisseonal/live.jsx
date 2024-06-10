@@ -9,14 +9,13 @@ function live() {
         <h1 className='text_2'>TWO PATHS LIE BEFORE YOU
         </h1>
         <div className="boxs">
-          <div className="box1">
+          <div className="boxss1">
             <h3>PAY
             </h3>
             <h1><sup>$</sup>35,000+</h1>
             <h3 className='texts_1'>Follow the conventional university route, investing years and significant funds into a traditional education, only to join the ranks of countless graduates.</h3>
             <a target='_blank' href="https://university.com/checkout">
-
-              <button>Remain an Employee</button>
+              <button class="btnss">Remain an Employee</button>
             </a>
           </div>
           <div className="vs"></div>
@@ -26,9 +25,7 @@ function live() {
             <h1><sup>$</sup>49.99+</h1>
             <h3 className='texts_1'>Immediately tap into a reservoir of cutting-edge knowledge, positioning yourself at the vanguard of innovation and fast-tracking your path to wealth.</h3>
             <a target='_blank' href="https://university.com/checkout">
-
-              <button className="button type1">
-              </button>
+              <button class="btnss">Purchase</button>
             </a>
           </div>
         </div>
@@ -65,7 +62,7 @@ function live() {
           <div className="path_2">
             <h2 className='text_11'>
               STEP-BY-STEP LEARNING</h2>
-            <h2>You will get access to 100+ video courses and well-structured tutorials covering everything from the fundamentals of modern business to niche money-making strategies.</h2>
+            <h2 className='gadoy'>You will get access to 100+ video courses and well-structured tutorials covering everything from the fundamentals of modern business to niche money-making strategies.</h2>
             <ul>
               <li> Easy-to-follow program for financial success</li>
               <li> New high income skills</li>
@@ -159,7 +156,7 @@ function live() {
             <h2 className='in_2'>You need to act now</h2>
             <p className='in_3'></p>
             <div className="narx">
-                <h1 className='chena'><sup>$</sup>49.99</h1>
+              <h1 className='chena'><sup>$</sup>49.99</h1>
 
             </div>
             <ul>
@@ -212,11 +209,11 @@ function live() {
           <h2 className='textss_2'>Go watch Netflix. Work a 9-5.</h2>
         </div>
 
-     
-        
+
+
       </div>
     </>
   )
-}   
+}
 
 export default live

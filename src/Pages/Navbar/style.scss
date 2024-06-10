@@ -24,7 +24,6 @@ a {
     display: flex;
     width: 1480px;
 
-
     align-items: center;
     justify-content: space-around;
     .box1 {
@@ -81,41 +80,69 @@ a {
     justify-content: space-evenly;
   }
 }
-  .menu_navbar{
-    width: 300px;
-    height: 600px;
-    background-color: aliceblue;
-    top: 0px;
-    z-index: 77777777777777777777777777777777777777777777777777777777777777777777777777777777777;
-    left: 5px;
-    position: fixed;
+.menu_navbar {
+  width: 300px;
+  height: 600px;
+  background-color: aliceblue;
+  top: 0px;
+  z-index: 77777777777777777777777777777777777777777777777777777777777777777777777777777777777;
+  left: 5px;
+  position: fixed;
+  display: flex;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  align-items: center;
+
+  flex-direction: column;
+  .menu-first {
+    width: 100%;
+
+    background-color: red;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    .menu-first{
-      width: 100%;
+    justify-content: space-between;
+  }
+  .close_btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .text_first {
+    cursor: pointer;
 
-      background-color: red;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .close_btn{
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
-    }
-    .text_first {
-      cursor: pointer;
+    font-family: monospace;
+    color: orange;
+    padding: 0px 4px;
 
-      font-family: monospace;
-      color: orange;
-      padding: 0px 4px;
-      transition: all 0.3s;
-      &:hover {
-        box-shadow: 0 2px 0 0 orange;
-      }
+    padding-top: 50px;
+    font-size: 28px;
+    transition: all 0.3s;
+  }
+  .txt_1 {
+    &:active {
+      box-shadow: 0 2px 0 0 orange;
+    }
+  }
+  .txt_2 {
+    &:active {
+      box-shadow: 0 2px 0 0 orange;
+    }
+  }
+  .txt_3 {
+    &:active {
+      box-shadow: 0 2px 0 0 orange;
+    }
+  }
+  .txt_4 {
+    &:active {
+      box-shadow: 0 2px 0 0 orange;
+    }
+  }
+  .txt_5 {
+    &:active {
+      box-shadow: 0 2px 0 0 orange;
+    }
   }
 }
